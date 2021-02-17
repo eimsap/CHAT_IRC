@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  font-family: Montserrat;
+  box-sizing: border-box;
+  color: #0db8de;
+}
+
+body {
+  background: linear-gradient(to right,#0f2e44, #332a53);
+}
+
+/*Login Page*/
+
+.card {
+	max-width: 450px;
+  width: 100%;
+  height: 550px;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+	margin-top: -286px;
+	border-radius: 8px;
+  background: #1a2226b2;
+}
+
+.logo {
+  background-image:url("../Bidule.png");
+  background-repeat:no-repeat;
+  background-size: contain;
+  position: absolute;
+	width: 150px;
+	height: 250px;
+  margin-left: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.text-logo {
+	text-align: center;
+	font-weight: bold;
+	font-size: 32px;
+  color:  #0db8de;
+  margin-bottom: 10%;
+  margin-top: 30%;
+}
+
+.cardBody {
+  width: 18rem;
+	height: 3rem;
+	left: 65px;
+	position: relative;
+	border-radius: 5px;
+}
+
+label {
+  font-size: 0.9rem;
+}
+
+input {
+  border: none;
+  padding: 0.5rem 0.1rem;
+  width: 100%;
+  border-radius: 2px;
+  border-bottom: 1px solid #eee;
+  transition: all 0.5s;
+}
+
+input:focus {
+  border-bottom: 1px solid #ccc;
+}
+
+.btnlogin {
+  background: #0db8de !important;
+  font-size: 14px;
+  transform: translateY(10px);
+  border-radius: 10px !important;
+}
+
+.signup {
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  color: white;
+}
+
+input[type="email"],
+input[type="password"] {
+  background: #1a2226;
+  border: 2px solid #0db8de;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  margin-top: 8%;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border: none;
+  background: #1a2226;
+  margin: 0;
+}
+
+/*Chatrooms Page*/
+
+.chatrooms {
+  width: 18rem;
+  height: 3rem;
+  left: 65px;
+  position: relative;
+  border-radius: 5px;
+  margin-top: 5%;
+}
+.titre{
+  margin-top: 5%;
+}
+
+input {
+  background: #1a2226;
+  border: 2px solid #0db8de;
+  border-radius: 10px;
+  margin-bottom: 25px;
+
+}
+
+.chatroom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.join {
+  padding: 0.30rem 1rem;
+  background: #1a2226;
+  border: 2px solid #0db8de;
+  border-radius: 10px;
+  margin-top: 3%;
+}
+.textcrea{
+  background: #1a2226;
+  border: 2px solid #0db8de;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  margin-top: 10%;
+  padding: 10px;
+  color: white;
+  margin-left: 30%;
+
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+.sidenav {
+	width: 15%;
+    height: 300px;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    margin-left: -500px;
+    margin-top: -286px;
+    border-radius: 8px;
+    background: #1a2226b2;
+}
+
+.sidenav a {
+	padding: 20px 6px 6px 8px;
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+}
+
+.sidenav a:hover {
+    color: rgb(8, 57, 114);
+}
+
+.messages { 
+	list-style-type: none; 
+	margin: 0; 
+	padding: 0;
+	width: auto;
+  height: 570px;
+  overflow-y: auto;
+}
+
+.messages li { 
+	display: flex;
+	flex-direction: column;
+	padding: 5px 10px; 
+	border-radius: 20px;
+	margin: 8px;
+	background-color:#1a2226c5;
+  
+}
+
+.block-msg-user {
+	padding: 15px 0px 15px 0px;
+}
+
+.block-msg-time {
+	margin-top: 2%;
+  margin-left: 50%;
+  float: right;
+  padding-left: 18%;
+}
+
+.chatroomPage {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    margin: -8px;
+    
+  }
+.logochat {
+    background-image:url("../Bidule.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 150px;
+    height: 120px;
+    margin-left: 75%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    margin-top: 6%;
+}
+.text-chat {
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    color: #0db8de;
+
+    margin-top: 5%;
+    position: absolute;
+    margin-left: 25%;
+}
+.chatroomSection {
+    width: 50%;
+    height: 650px;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    margin-left: -200px;
+    margin-top: -286px;
+    border-radius: 8px;
+    background: #1a2226b2;
+}
+.mes{
+    padding: 0.5rem 0.1rem;
+    width: 100%;
+    transition: all 0.5s;
+    height: 100%;
+}
+.chatroomContent {
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    right: 0;
+    bottom: 3.5rem;
+    padding: 0.5rem;
+    overflow: auto;
+}
+.chatroomActions {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 72px;
+    grid-gap: 1rem;
+    border-top: 1px solid #eee;
+}
+.chatroomActions button {
+    height: 100%;
+}
+.message {
+    margin-bottom: 0.25rem;
+}
+.otherMessage {
+    color: #0099cc;
+    font-weight: bold;
+}
+
+
+html {
+  --scrollbarBG: #000000;
+  --thumbBG: #0db8de;
+}
+.messages::-webkit-scrollbar {
+  width: 11px;
+}
+.messages {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+.messages::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+.messages::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+}
+
+

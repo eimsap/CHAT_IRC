@@ -1,0 +1,93 @@
+.chatroomPage {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  margin: -8px;
+  
+}
+.logochat {
+  background-image:url("../src/Bidule.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 150px;
+  height: 120px;
+  margin-left: 75%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  margin-top: 6%;
+}
+.text-chat {
+
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  color: #0db8de;
+
+  margin-top: 5%;
+  position: absolute;
+  margin-left: 25%;
+
+}
+
+
+.chatroomSection {
+  width: 50%;
+  height: 650px;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  margin-left: -200px;
+  margin-top: -286px;
+  border-radius: 8px;
+  background: #1a2226b2;
+}
+.mes{
+  padding: 0.5rem 0.1rem;
+  width: 100%;
+  transition: all 0.5s;
+  height: 100%;
+}
+.chatroomContent {
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  right: 0;
+  bottom: 3.5rem;
+  padding: 0.5rem;
+  overflow: auto;
+}
+
+.chatroomActions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 72px;
+  grid-gap: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.chatroomActions button {
+  height: 100%;
+}
+
+.message {
+  margin-bottom: 0.25rem;
+}
+
+.otherMessage {
+  color: #0099cc;
+  font-weight: bold;
+}
+
+.ownMessage {
+  color: #00cc00;
+  font-weight: bold;
+}
